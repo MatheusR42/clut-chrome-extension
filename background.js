@@ -323,7 +323,6 @@ var quickSwitchActiveUsage = function () {
 		} else if (quickActive < 5) {
 			quickActive++;
 		} else if (quickActive >= 5) {
-			_gaq.push(['_trackEvent', 'activeUsage', 'quick']);
 			quickActive = -1;
 		}
 	}
@@ -337,7 +336,6 @@ var slowSwitchActiveUsage = function () {
 		} else if (slowActive < 5) {
 			slowActive++;
 		} else if (slowActive >= 5) {
-			_gaq.push(['_trackEvent', 'activeUsage', 'slow']);
 			slowActive = -1;
 		}
 	}
